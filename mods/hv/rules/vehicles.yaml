@@ -582,6 +582,12 @@ ARTIL:
 		LoadedChance: 75
 	RenderSprites:
 		PlayerPalette: green
+	LeavesTrails:
+		Image: artil
+		Sequences: tracks
+		Type: Cell
+		TerrainTypes: Snow, Grass
+		SpawnAtLastPosition: false
 
 ARTIL3:
 	Inherits: ^TrackedVehicle

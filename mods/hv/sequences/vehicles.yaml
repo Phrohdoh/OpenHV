@@ -156,6 +156,11 @@ artil:
 		Tick: 100
 	icon: units-icons.png
 		Start: 2
+	tracks: artil-tracks.png
+		Facings: 8
+		Tick: 12000
+		BlendMode: Alpha
+		ZOffset: -1023
 
 artil3:
 	idle: artil3.png
