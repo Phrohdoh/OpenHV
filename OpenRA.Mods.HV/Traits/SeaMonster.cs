@@ -155,7 +155,8 @@ namespace OpenRA.Mods.HV.Traits
 			get { return Util.ApplyPercentageModifiers(Info.Speed, speedModifiers); }
 		}
 
-		public (CPos Cell, SubCell SubCell)[] OccupiedCells() { return new[] { (TopLeft, SubCell.FullCell) }; }
+		// TODO: temporary revert as upstream pull request is outdated
+		public Pair<CPos, SubCell>[] OccupiedCells() { return new[] { Pair.New(TopLeft, SubCell.FullCell) }; }
 
 		WVec MoveStep(WAngle facing)
 		{
