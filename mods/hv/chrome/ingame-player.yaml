@@ -434,7 +434,8 @@ Container@PLAYER_WIDGETS:
 				Container@PALETTE_BACKGROUND:
 					Children:
 						Image@ROW_TEMPLATE:
-							Width: 244
+							X: PARENT_RIGHT - 8
+							Width: 252
 							Height: 48
 							ClickThrough: false
 							ImageCollection: sidebar
@@ -584,3 +585,16 @@ Container@PLAYER_WIDGETS:
 									Y: 3
 									ImageCollection: scrollbar
 									ImageName: down_arrow
+				SpritePowerMeter@POWER_BAR:
+					Logic: SpritePowerMeterLogic
+					X: WINDOW_RIGHT - 258
+					Y: 96
+					BarStride: 2
+					PowerUnitsPerBar: 10
+					Height: 148
+					ImageCollection: power-meter
+					NoPowerImage: none
+					AvailablePowerImage: available
+					UsedPowerImage: danger
+					OverUsedPowerImage: disabled
+					FlashPowerImage: used

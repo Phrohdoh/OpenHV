@@ -19,7 +19,7 @@ sidebar:
 	Inherits: ^Chrome
 	Regions:
 		background-top: 438, 128, 244, 288
-		background-iconrow: 438, 409, 244, 50
+		background-iconrow: 430, 409, 253, 50
 		background-bottom: 438, 459, 244, 7
 		background-supportoverlay: 0, 75, 64, 48
 
@@ -84,6 +84,15 @@ power-icons:
 	Regions:
 		power-normal: 350, 0, 12, 18
 		power-critical: 363, 0, 12, 18
+
+power-meter:
+	Inherits: ^Chrome
+	Regions:
+		none: 418,448,10,2
+		available: 418,450,10,2
+		used: 418,452,10,2
+		danger: 418,454,10,2
+		disabled: 418,456,10,2
 
 production-icons:
 	Inherits: ^Chrome
